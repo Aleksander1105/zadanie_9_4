@@ -1,8 +1,17 @@
-
-	for (var i = 7; i >= 1; i--) {
-	  var star = "";
-	  for (var j = i; j <= 7; j++) {
-	  	star += "*";
-	  }
-	 	console.log(star);
+ 
+function drawTree(levels) {
+	var star = "";
+	for (var i = 0; i <= levels; i++) {
+		var space = " ";
+		for (var j = levels; j >= i; j--) {
+			space += " ";
+		}
+	  	star += "* ";
+	 	console.log(space + star);
 	}
+}
+
+drawTree(15);
+
+
+
